@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="10117"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <menu title="AMainMenu" systemMenu="main" id="29">
+            <items>
+                <menuItem title="Minesweeper" id="56">
+                    <menu key="submenu" title="Minesweeper" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="Über Minesweeper" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="236">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Highscores..." keyEquivalent="l" id="877">
+                                <connections>
+                                    <action selector="showHighscores:" target="876" id="878"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Einstellungen…" keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="showPreferences:" target="809" id="L2g-VG-soc"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Minesweeper ausblenden" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Andere ausblenden" keyEquivalent="h" id="145">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="368"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Alle einblenden" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="370"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Minesweeper beenden" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-3" id="449"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Spiel" id="83">
+                    <menu key="submenu" title="Spiel" autoenablesItems="NO" id="81">
+                        <items>
+                            <menuItem title="Neues Spiel" keyEquivalent="n" id="82">
+                                <connections>
+                                    <action selector="pushedNewGame:" target="564" id="591"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Spiel pausieren" alternate="YES" keyEquivalent=" " id="589">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <binding destination="564" name="enabled" keyPath="activeGame" id="902"/>
+                                    <binding destination="564" name="value" keyPath="pausedGame" id="886"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Darstellung" id="Gj0-Uo-fTG">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Darstellung" id="zRh-hC-ylO">
+                        <items>
+                            <menuItem title="Kleine Felder" id="llc-RW-6lM">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="pushedSmallSquareSize:" target="564" id="eVS-y0-bNj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Normale Folder" state="on" id="3hL-I7-4Qc">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="pushedMediumSquareSize:" target="564" id="rgG-As-YVQ"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Große Felder" id="cvB-Gs-Hev">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="pushedLargeSquareSize:" target="564" id="L0n-xo-NCa"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Fenster" id="19">
+                    <menu key="submenu" title="Fenster" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Schliesen" keyEquivalent="w" id="598">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="609"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Im Dock ablegen" keyEquivalent="m" id="23">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="37"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Alle nach vorne bringen" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Hilfe" id="490">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="Hilfe" systemMenu="help" id="491"/>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="Minesweeper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
+            <rect key="contentRect" x="120" y="208" width="400" height="428"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1058"/>
+            <view key="contentView" id="372">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="428"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="536" customClass="MapView">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="564" id="569"/>
+                        </connections>
+                    </customView>
+                    <customView id="887">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" id="918">
+                                <rect key="frame" x="140" y="352" width="122" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Spiel pausiert" id="919">
+                                    <font key="font" metaFont="system" size="18"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" id="941">
+                                <rect key="frame" x="137" y="183" width="128" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <buttonCell key="cell" type="push" title="Weiter spielen" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="942">
+                                    <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <binding destination="564" name="value" keyPath="pausedGame" id="947"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <connections>
+                            <binding destination="564" name="hidden" keyPath="pausedGame" id="940">
+                                <dictionary key="options">
+                                    <string key="NSValueTransformerName">NSNegateBoolean</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </customView>
+                    <button verticalHuggingPriority="750" id="820">
+                        <rect key="frame" x="338" y="404" width="50" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundTextured" title="Pause" bezelStyle="texturedRounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="821">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="pushedPause:" target="564" id="1007"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" id="842" propertyAccessControl="none">
+                        <rect key="frame" x="157" y="404" width="87" height="25"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="roundTextured" title="Neues Spiel" bezelStyle="texturedRounded" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="843">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="pushedNewGame:" target="564" id="875"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <contentBorderThickness minY="0.0" maxY="34"/>
+            <connections>
+                <outlet property="delegate" destination="564" id="1008"/>
+            </connections>
+        </window>
+        <customObject id="564" customClass="GameController">
+            <connections>
+                <outlet property="itmLargeSquareSize" destination="cvB-Gs-Hev" id="hbU-ur-AlE"/>
+                <outlet property="itmMediumSquareSize" destination="3hL-I7-4Qc" id="5jh-Vn-jFe"/>
+                <outlet property="itmSmallSquareSize" destination="llc-RW-6lM" id="HBe-FM-wMQ"/>
+                <outlet property="mapView" destination="536" id="568"/>
+                <outlet property="window" destination="371" id="874"/>
+            </connections>
+        </customObject>
+        <customObject id="809" customClass="PreferencesController"/>
+        <customObject id="876" customClass="HighscoresController"/>
+    </objects>
+</document>

@@ -1,0 +1,159 @@
+/* Open the About Dialog */
+"About Minesweeper" = "About Minesweeper";
+
+/* Show the Highscores List */
+"Highscores..." = "Highscores...";
+
+/* Show the Prefrenes Window */
+"Preferences..." = "Preferences...";
+
+/* Hide the Application Minesweeper */
+"Hide Minesweeper" = "Hide Minesweepr";
+
+/* Hide other Applications */
+"Hide Others" = "Hide Others";
+
+/* Show all Applications */
+"Show All" = "Show All";
+
+/* Quit the Application Minesweeper */
+"Quit Minesweeper" = "Quit Minesweeper";
+
+/* Start a new Game */
+"New Game" = "New Game";
+
+/* Pause the current Game */
+"Pause Game" = "Pause Game";
+
+/* Close the key window */
+"Close" = "Close";
+
+/* Minimize the key window */
+"Minimize" = "Minimize";
+
+/* Bring all Windows of the Application Minesweeper to front */
+"Bring All to Front" = "Bring All to Front";
+
+/* Start a new Game */
+"New Game" = "New Game";
+
+/* Pause the current Game */
+"Pause" = "Pause";
+
+/* Indicator for a paused Game */
+"Paused Game" = "Paused Game";
+
+/* Continue the Game after a pause */
+"Continue Game" = "Continue Game";
+
+/* Congratulation for a win */
+"Congratulations: You won!" = "Congratulations: You won!";
+
+/* Header for a table of Statistics about a Game */
+"Statistics" = "Statistics";
+
+/* Label pointing to the Number of Fields of a Map */
+"Fields:" = "Fields:";
+
+/* Label pointing to the Number of Mines in a Map */
+"Mines:" = "Mines:";
+
+
+/* Label pointing to the Time needed for a map */
+"Time:" = "Time:";
+
+/* Label pointing to the Number of Turns needed for a Map */
+"Turns:" = "Turns:";
+
+/* Label pointing to the Field to enter a nickname */
+"Nickname:" = "Nickname:";
+
+/* Always use a specified nickname */
+"Always use this nickname" = "Always use this nickname";
+
+/* Entered Nickname and Confirmed */
+"Okay" = "Okay";
+
+/* Always use a specified nickname */
+"Always use this nickname" = "Always use this nickname";
+
+/* The window showing the Preferences */
+"Minesweeper Preferences" = "Minesweeper Preferences";
+
+/* The Size of a Map */
+"Size" = "Size";
+
+/* Map Size "Beginner" */
+"Beginner (10/64)" = "Beginner (10/64)";
+
+/* Map Size "Advanced" */
+"Advanced (40/256)" = "Advanced (40/256)";
+
+/* Map Size "Professionel" */
+"Professionel (99/480)" = "Professionel (99/480)";
+
+/* Map Size "Custom" */
+"Custom" = "Custom";
+
+/* Label pointing to Width for custom Map Size */
+"Width:" = "Width:";
+
+/* Label pointing to Height for custom Map Size */
+"Height:" = "Height:";
+
+/* Label pointing to Number of Mines in a custom Map Size */
+"Mines:" = "Mines:";
+
+/* Warning that Map Size Chnages result in the need for a new map */
+"If you change these Settings a new game will start!" = "If you change these Settings a new game will start!";
+
+/* Nickname */
+"Nickname" = "Nickname";
+
+/* Always use a specified nickname */
+"Always use this nickname:" = "Always use this nickname:";
+
+/* Sounds */
+"Sounds" = "Sounds";
+
+/* Play Sounds during the game */
+"Play Sounds" = "Play Sounds";
+
+/* Pausing */
+"Pausing" = "Pausing";
+
+/* Pause the game when the window isn't active */
+"Automaticly pause when the window is not active" = "Automaticly pause when the window is not active";
+
+/* Cancel Editing Settings */
+"Cancel" = "Cancel";
+
+/* End Editing Settings and save the Changes */
+"Okay" = "Okay";
+
+/* The window showing the Highscores */
+"Minesweeper Highscores" = "Minesweeper Highscores";
+
+/* Nickname */
+"Nickname" = "Nickname";
+
+/* Date */
+"Date" = "Datum";
+
+/* Time in seconds */
+"Time in seconds" = "Zeit in Sekunden";
+
+/* Turns */
+"Turns" = "Züge";
+
+/* Mines */
+"Mines" = "Mienen";
+
+/* Fields */
+"Fields" = "Felder";
+
+/* Clear all Highscores */
+"Clear" = "Löschen";
+
+/* Seconds */
+"seconds" = "Sekunden";
